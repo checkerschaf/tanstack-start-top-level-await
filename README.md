@@ -1,18 +1,11 @@
-# trpc with TanStack Start
-
-### Playing around
+# Reproduction
 
 ```bash
-pnpm install
-pnpm dev
+bun i
+bun run build
+bun run .output/server/index.mjs
 ```
 
-> [!TIP]
-> Try editing the app.config.ts deployment presets for different runtime builds. :)
+Open browser and navigate to `http://localhost:3000/posts`.
 
-## Building
-
-```bash
-pnpm build
-pnpm start
-```
+Within 5 seconds, refresh the page. The error will be thrown.
